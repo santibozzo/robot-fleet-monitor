@@ -1,0 +1,28 @@
+{
+  "name": "robotsim",
+  "version": "1.0.0",
+  "description": "Simulate a robot that publish amqp messages about position, battery and other info",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "storm": "babel-node src/index.js -n 100",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "consume": "babel-node src/consumer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.6",
+    "argparse": "^1.0.10",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "express": "4.17.1",
+    "lodash": "^2.0.0",
+    "mongoose": "5.11.15"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
