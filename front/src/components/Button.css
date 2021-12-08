@@ -45,3 +45,16 @@
 	background-color: #003e3e;
 	border: 1px solid #003e3e;
 }
+
+/* blue transparent */
+
+.button-blue-transparent {
+	color: black;
+	background-color: transparent;
+	border: 1px solid darkcyan;
+}
+
+.button-blue-transparent:hover {
+	background-color: #003e3e;
+	border: 1px solid #003e3e;
+}

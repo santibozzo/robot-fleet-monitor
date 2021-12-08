@@ -1,5 +1,13 @@
 .locations-div {
 	width: 100%;
-	align-content: center;
 	padding-top: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.locations-button {
+	width: 20%;
+	margin: 20px;
+	display: block;
 }

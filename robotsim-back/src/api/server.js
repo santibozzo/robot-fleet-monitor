@@ -1,6 +1,7 @@
 import settings from '../settings.json';
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import robotsRouter from './routers/robotRouter';
 import batteryAnomalyRouter from './routers/batteryAnomalyRouter';
 import closeCallRouter from './routers/closeCallRouter';
@@ -10,6 +11,7 @@ import { startAmqpListener } from './amqpListener';
 const app = express();
 
 const startApiServer = async () => {
+	app.use(cors());
 	app.use(express.json());
 	app.use('/robots', robotsRouter);
 	app.use('/battery-anomalies', batteryAnomalyRouter);
