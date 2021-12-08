@@ -29,6 +29,7 @@ const updateRobotState = async robotState => {
 	)) {
 		await saveBatteryAnomaly({
 			robotId: robotState.id,
+			location: robotState.location,
 			oldBatteryCharge: results[0].battery ? results[0].battery : -1,
 			newBatteryCharge: robotState.battery ? robotState.battery : -1,
 			errorMessage: !robotState.battery ? BATTERY_ERROR : BATTERY_ABRUPT_CHANGE,

@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import settings from './settings';
 
 const MAP_SIDE = 30;
 
@@ -34,7 +35,7 @@ export default class Robot {
     this.mode = ROBOT_MODE.IDLE;
     this.status = ROBOT_STATUS.OK;
     this._goal = _.sample(GOALS);
-    this.location = Math.floor(Math.random() * 3 + 1).toString();
+    this.location = Math.floor(Math.random() * settings.locationsAmount + 1).toString();
   }
 
   id = () => (

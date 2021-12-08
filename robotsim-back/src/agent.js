@@ -27,9 +27,9 @@ export default class Agent {
   }
 
   _publishStatus() {
-    const { battery, mode, status,_id } = this._robot;
+    const { battery, mode, status, _id, location } = this._robot;
     this.chann.publish(ROBOTS_EXCHANGE, 'status', Buffer.from(JSON.stringify({
-      _id, battery, mode, status
+      _id, battery, mode, status, location
     })));
   }
 

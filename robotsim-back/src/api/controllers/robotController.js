@@ -2,7 +2,9 @@ import { saveOrUpdateRobot, findRobots, updateRobotState, updateRobotPosition } 
 import { saveErrorHandler } from '../utils/errorHandlers';
 
 const getRobots = (req, res) => {
-	findRobots()
+	const locationId = req.query.locationId;
+	const filters = locationId ? {location: locationId} : {};
+	findRobots(filters)
 		.then((results) => res.status(200).send(results))
 		.catch(err => res.status(500).send(err.message));
 };

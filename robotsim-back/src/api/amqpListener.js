@@ -13,6 +13,7 @@ const startAmqpListener = async () => {
 		const data = JSON.parse(msg.content.toString());
 		updateRobotState({
 			id: data._id,
+			location: data.location,
 			battery: data.battery,
 			mode: data.mode,
 			status: data.status

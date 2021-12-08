@@ -4,5 +4,6 @@
   "dbHost": "localhost",
   "dbPort": 27017,
   "startSim": true,
-  "realTimeCloseCalls": false
+  "realTimeCloseCalls": false,
+  "locationsAmount": 3
 }
