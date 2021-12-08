@@ -1,0 +1,47 @@
+.button-base {
+	padding: 6px 12px;
+	border-radius: 5%;
+}
+
+.button-base:hover {
+	cursor: pointer;
+}
+
+/* red */
+
+.button-red {
+	color: white;
+	background-color: red;
+	border: 1px solid red;
+}
+
+.button-red:hover {
+	background-color: rgba(157, 0, 7, 0.99);
+	border: 1px solid rgba(157, 0, 7, 0.99);
+}
+
+/* yellow */
+
+.button-yellow {
+	color: black;
+	background-color: yellow;
+	border: 1px solid yellow;
+}
+
+.button-yellow:hover {
+	background-color: #818100;
+	border: 1px solid #818100;
+}
+
+/* blue */
+
+.button-blue {
+	color: white;
+	background-color: darkcyan;
+	border: 1px solid darkcyan;
+}
+
+.button-blue:hover {
+	background-color: #003e3e;
+	border: 1px solid #003e3e;
+}
