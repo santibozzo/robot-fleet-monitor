@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src/index.js",
-    "storm": "babel-node src/index.js -n 100",
+    "storm": "babel-node src/index.js -n 20",
     "test": "echo \"Error: no test specified\" && exit 1",
     "consume": "babel-node src/consumer.js"
   },

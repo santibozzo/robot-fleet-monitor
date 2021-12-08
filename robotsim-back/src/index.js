@@ -8,7 +8,7 @@ const processArgs = () => {
   const parser = new ArgumentParser({
     version: '1.0',
     addHelp: true,
-    description: 'MiniOrbit robot simulation'
+    description: 'robot fleet monitor'
   });
   parser.addArgument(['-n'], {
     help: 'Number of robots',

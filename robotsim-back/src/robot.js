@@ -34,7 +34,7 @@ export default class Robot {
     this.mode = ROBOT_MODE.IDLE;
     this.status = ROBOT_STATUS.OK;
     this._goal = _.sample(GOALS);
-    this.location = Math.random().toString(36).substr(2, 2);
+    this.location = Math.floor(Math.random() * 3 + 1).toString();
   }
 
   id = () => (
