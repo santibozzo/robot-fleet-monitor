@@ -1,4 +1,4 @@
-.locations-div {
+.battery-anomalies-div {
 	width: 100%;
 	padding-top: 40px;
 	display: flex;
@@ -6,8 +6,6 @@
 	align-items: center;
 }
 
-.locations-button {
-	width: 20%;
-	margin: 20px;
-	display: block;
+.battery-anomalies-table {
+
 }
